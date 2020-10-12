@@ -1,0 +1,72 @@
+* {
+    font-family: 'Sansita Swashed', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 100vh ocupa todo o espaço da tela. E o align-items: ; só funciona assim */
+    height: 100vh;
+    background: #333333;
+}
+
+input {
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=text] {
+    width: calc(100% - 4px);
+    height: 40px;
+}
+
+input[type=button] {
+    width: 100px;
+    transition: ease .2s;
+    height: 50px;
+    cursor: pointer;
+}
+
+#calculadora div {
+    display: flex;
+}
+
+#quarta input:nth-child(1) {
+    background: #f11a1a;
+}
+
+#quarta input:nth-child(1), #calculadora {
+    border-bottom-left-radius: 35px;
+}
+
+#quarta input:nth-child(3) {
+    background: #1a4cf1;
+}
+
+#calculadora div input:nth-child(4) {
+    background: #808080; 
+}
+
+#quarta input:nth-child(4), #calculadora {
+    border-bottom-right-radius: 35px;
+}
+
+input[type=button]:hover {
+    filter: brightness(50%); /* altera o brilho */
+}
+
+input[type=button]:active {
+    transform: scale(0.9); /* altera o tamanho do button */
+}
+
+#calculadora {
+    box-shadow: 0 0 20px #6b6868;
+}
